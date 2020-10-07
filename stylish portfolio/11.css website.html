@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5c74838b0e.js"></script>
+
+
+    <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700;
+        }
+
+        .main-bg {
+            background-image: url('bg-masthead.jpg');
+            width: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            opacity: 0.88;
+        }
+
+        .main-content {
+            text-align: center;
+
+        }
+
+        .main-content h1 {
+            font-size: 90px;
+            margin: 0;
+        }
+
+        .main-content p {
+            font-size: 28px;
+            margin: 0;
+            font-weight: 600;
+            font-style: oblique;
+        }
+
+        .main-content button {
+            margin: 40px;
+        }
+
+        .b1 {
+            font-weight: 700;
+            font-size: 15px;
+            padding: 25px 40px;
+            border-radius: 5px;
+            outline: 0;
+            border: 0;
+            text-transform: capitalize;
+            letter-spacing: 0px;
+            cursor: pointer;
+
+        }
+
+        .b1-blue {
+            background-color: #1d809f;
+            color: #fff;
+        }
+
+        .b1-blue:hover {
+            background-color: #145468;
+        }
+
+        .b1-black {
+            background-color: rgb(41, 40, 40);
+            color: #fff;
+        }
+
+        .b1-black:hover {
+            background-color: rgb(22, 22, 22);
+        }
+
+        .offers {
+            padding: 100px 0;
+            text-align: center;
+            background-color: #f8f9fa;
+
+        }
+
+        .offers h2 {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .offers p {
+            font-size: 20px;
+            color: #212529;
+            font-weight: 200;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        .offers a {
+            text-decoration-color: none;
+            text-decoration: none;
+            font-weight: 100;
+            background-color: transparent;
+            color: #1d809f;
+            margin: 0;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: darkgrey;
+        }
+
+        .bg2 {
+            background-color: #1d809f;
+            width: 100%;
+            height: 550px;
+            text-align: center;
+
+        }
+
+        .bg2 h4 {
+            display: block;
+            text-align: center;
+            margin: 0;
+            font-size: 16px;
+            padding-top: 120px;
+            /*padding-bottom: 120px;*/
+            color: #ecb807;
+            font-weight: 700;
+
+        }
+
+        .bg2 p {
+            margin-top: 0px;
+            margin-bottom: 50px;
+            /*margin-top:10px;*/
+            font-size: 48px;
+            text-transform: capitalize;
+            margin-bottom: 48px;
+            font-weight: 700;
+            padding: 0px;
+            color: #fff;
+        }
+
+        .row {
+            width: 100%;
+
+
+
+        }
+
+        .col {
+            width: 25%;
+            float: left;
+
+        }
+
+        .icon1,
+        .icon2,
+        .icon3,
+        .icon4 {
+            margin: 0 auto;
+            width: 70%;
+            text-align: center;
+            box-sizing: border-box;
+            display: block;
+
+        }
+
+        /*.sub1{ margin:auto auto;
+            background-color: white;
+            border-radius: 50%;
+            height:100px;box-sizing: border-box;
+            display: block;
+        }*/
+        .sub1,
+        .sub2,
+        .sub3,
+        .sub4 {
+            margin: auto auto;
+            background-color: white;
+            border-radius: 50%;
+            display: block;
+            width: 7rem;
+            text-align: center;
+            box-sizing: border-box;
+            height: 7rem;
+
+        }
+
+        .sub1 i,
+        .sub2 i,
+        .sub3 i,
+        .sub4 i {
+            margin-top: 10%;
+            margin-right: 25%;
+            font-size: 3rem;
+            color: #1d809f;
+            transform: translate(50%, 50%);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .icon1 h2,
+        .icon2 h2,
+        .icon3 h2,
+        .icon4 h2 {
+            color: #fff;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .icon1 p,
+        .icon2 p,
+        .icon3 p,
+        .icon4 p {
+            font-size: 16px;
+            margin-top: 0;
+            text-transform: none !important;
+            font-weight: 400;
+            line-height: 0;
+            color: rgba(255, 255, 255, 0.7);
+
+        }
+
+        .bg3 {
+            width: 100%;
+            background-image: url('scissor.jpg');
+
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: unset;
+            padding: 210px 0px;
+            margin: 0;
+            opacity: 1;
+        }
+
+        .bg3 p {
+            font-size: 55px;
+            text-align: center;
+            font-weight: 700;
+
+        }
+
+        .b1-dl {
+            background-color: #1d809f;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+
+            border-color: #1d809f;
+
+        }
+
+        .b1-dl:hover {
+            background-color: #145468;
+        }
+
+
+        }
+
+        .b1-dl:hover {
+            background-color: #145468;
+        }
+
+        .bg4 {
+            background-color: #ffff;
+            width: 100%;
+            height: 550px;
+            text-align: center;
+
+        }
+
+        .bg4 h4 {
+
+            margin-top: 48px;
+            font-size: 16px;
+            /* padding-top: 120px;
+           padding-bottom: 120px;*/
+            color: #ecb807;
+            font-weight: 700;
+            margin: 0;
+
+        }
+
+        .bg4 p {
+            margin-top: 0px;
+            margin-bottom: 50px;
+            /*margin-top:10px*/
+            font-size: 48px;
+            text-transform: capitalize;
+            margin-bottom: 48px;
+            background-color: transparent;
+            text-decoration-color: none;
+            text-decoration: none;
+            font-weight: 700;
+            margin: 0;
+            color: black;
+            text-transform: capitalize;
+            text-align: center;
+        }
+
+
+        .img {
+            width: 600px;
+            margin-left: 5%;
+        }
+
+        .bg5 {
+            text-align: center;
+            box-sizing: border-box;
+            width: 31%;
+            float: left;
+            margin: 1%;
+            box-shadow: 0 0 5px;
+            transition: all 400ms ease-in-out;
+            background-image: url('pf1.jpg');
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 350px;
+            width: 100%;
+            cursor: pointer;
+
+
+        }
+
+        .bg5:hover {
+            background-color: blue;
+            opacity: 0.5;
+            transform: scale(0.9, 0.9);
+
+
+
+        }
+
+        .bg6 {
+            text-align: center;
+            margin-top: 0;
+            box-sizing: border-box;
+            width: 31%;
+            float: left;
+            margin: 1%;
+            box-shadow: 0 0 5px;
+            transition: all 400ms ease-in-out;
+            background-image: url('pf3.jpg');
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 350px;
+            width: 100%;
+            cursor: pointer
+        }
+
+        .bg6:hover {
+            background-color: blue;
+            opacity: 0.5;
+            transform: scale(0.9, 0.9);
+        }
+
+        .bg7 {
+            text-align: center;
+            margin-top: 0;
+            box-sizing: border-box;
+            width: 31%;
+            float: left;
+            margin: 1%;
+            box-shadow: 0 0 5px;
+            transition: all 400ms ease-in-out;
+            background-image: url('pf2.jpg');
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 350px;
+            width: 100%;
+            cursor: pointer;
+            margin-left: 102%;
+            margin-top: -120%;
+        }
+
+        .bg7:hover {
+            background-color: blue;
+            opacity: 0.5;
+            transform: scale(0.9, 0.9);
+        }
+
+        .bg8 {
+            text-align: center;
+            margin-top: 0;
+            box-sizing: border-box;
+            width: 31%;
+            float: left;
+            margin: 1%;
+            box-shadow: 0 0 5px;
+            transition: all 400ms ease-in-out;
+            background-image: url('pf4.jpg');
+            background-attachment: local;
+            background-repeat: no-repeat;
+            background-position: left;
+            height: 350px;
+            width: 100%;
+            cursor: pointer;
+            margin-left: 102%;
+            margin-top: -60%;
+        }
+
+        .bg8:hover {
+            background-color: blue;
+            opacity: 0.5;
+            transform: scale(0.9, 0.9);
+        }
+
+
+        .bg9 {
+            background-color: #1d809f;
+            width: 100%;
+            height: 350px;
+            text-align: center;
+            margin-top: 500px;
+
+        }
+
+        .bg9 h1 {
+            color: #fff;
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 700;
+            font-size: 32.5px;
+            padding-top: 100px;
+
+        }
+
+        .b3 {
+            margin: 40px;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 25px 40px;
+            border-radius: 5px;
+            outline: 0;
+            border: 0;
+            text-transform: capitalize;
+            letter-spacing: 0px;
+            cursor: pointer;
+            color: black;
+            background-color: #fff;
+            text-align: center;
+            text-decoration: none;
+            text-decoration-color: none;
+            margin: 10px;
+
+        }
+
+        .b3:hover {
+            background-color: #f8f9fa;
+        }
+
+        .b4 {
+            margin: 40px;
+            font-weight: 700;
+            font-size: 15px;
+            padding: 25px 40px;
+            border-radius: 5px;
+            outline: 0;
+            border: 0;
+            text-transform: capitalize;
+            letter-spacing: 0px;
+            cursor: pointer;
+            color: #fff;
+            background-color: #343a40;
+            text-align: center;
+            text-decoration: none;
+            text-decoration-color: none;
+            margin: 10px;
+
+        }
+
+        .b4:hover {
+            background-color: black;
+        }
+
+        iframe {
+            width: 100%;
+        }
+
+        h6 {
+            color: #6c757d;
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 80%;
+            margin-top: 100px;
+            display: block;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-bg">
+        <div class="main-content">
+
+            <h1>Stylish Portfolio</h1>
+            <p>A Free Bootstrap Theme by Start Bootstrap</p>
+            <button class="b1 b1-blue">Find out more</button>
+
+        </div>
+
+    </div>
+    <div class="offers">
+        <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
+        <p>This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+            <a href="https://unsplash.com/" alt="Unsplash">Unsplash</a>!</p>
+        <button class="b1 b1-black">What we offer</button>
+    </div>
+    <div class="bg2">
+        <h4>SERVICES</h4>
+        <p>what we offer</p>
+        <div class="col">
+            <div class="icon1">
+                <div class="sub1">
+                    <i class="fas fa-mobile-alt"></i>
+
+                </div>
+                <h2>Responsive</h2><br>
+                <p>Looks great on any screen size!</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="icon2">
+                <div class="sub2">
+                    <i class="fas fa-pen"></i>
+
+                </div>
+                <h2>Redesigned</h2><br>
+                <p>Freshly redesigned for Bootstrap 4.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="icon3">
+                <div class="sub3">
+                    <i class="fas fa-thumbs-up"></i>
+
+                </div>
+                <h2>Favorited</h2><br>
+                <p>Millions of user <i class="fas fa-heart"></i> Start Bootstrap!</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="icon4">
+                <div class="sub4">
+                    <i class="fas fa-pen"></i>
+
+                </div>
+                <h2>Question</h2><br>
+                <p>I mustache you a question...</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div class="bg3">
+        <p>Welcome to <i>your</i><br> next website!</p>
+        <center>
+            <button class="b1 b1-dl">Download Now!</button></center>
+    </div>
+    <div class="bg4"><br><br><br><br><br><br>
+        <h4>PORTFOLIO</h4>
+        <p>Recent projects</p>
+        <div class="img">
+            <div class="bg5">
+                <h2>Stationary</h2>
+                <p>A yellow pencil with envelopes on a clean, blue backdrop!</p>
+                
+            </div>
+            <div class="bg6">
+          <h2>Ice Cream</h2>
+          <p>A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+            </div>
+            <div class="bg7">
+                <h5></h5>
+                <p></p>
+            </div>
+            <div class="bg8">
+                <h5></h5>
+                <p></p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bg9">
+        <h1>The buttons below are impossible to resist...</h1>
+
+        <button class="b3">Click Me!</button>
+        <button class="b4">Look at Me!</button>
+    </div>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.5790052710763!2d-122.41938908528115!3d37.776468479759075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6c8f4459%3A0xb10ed6d9b5050fa5!2sTwitter!5e0!3m2!1sen!2sin!4v1560890184601!5m2!1sen!2sin"
+        width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h6>Copyright &copy; Your Website 2019</h6>
+</body>
+
+</html>
